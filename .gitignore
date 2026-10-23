@@ -1,0 +1,13 @@
+build/
+cmake-build-*/
+out/
+.vs/
+.vscode/
+.idea/
+CMakeUserPresets.json
+*.exe
+*.o
+*.obj
+
+# файл, который создаёт лаба 7 при запуске
+notes.txt

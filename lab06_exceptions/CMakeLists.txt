@@ -1,0 +1,13 @@
+add_task(lab06_number_words 01_number_words.cpp)
+add_task(lab06_birth_year 02_birth_year.cpp)
+add_task(lab06_custom_exception 03_custom_exception.cpp)
+
+add_io_test(lab06_number_ok lab06_number_words "2" "Два")
+add_io_test(lab06_number_bad lab06_number_words "7" "Некорректное значение")
+add_io_test(lab06_year_ok lab06_birth_year "2000" "Спасибо!")
+add_io_test(lab06_year_old lab06_birth_year "1700" "Что-то не верится...")
+add_io_test(lab06_year_future lab06_birth_year "3000" "Вы ещё не родились")
+add_io_test(lab06_year_negative lab06_birth_year "-5" "Вы ввели отрицательное число!")
+add_io_test(lab06_custom_ok lab06_custom_exception "1999" "Спасибо!")
+add_io_test(lab06_custom_negative lab06_custom_exception "-1" "Вы ввели отрицательное число!")
+add_io_test(lab06_custom_future lab06_custom_exception "2999" "Вы ещё не родились")

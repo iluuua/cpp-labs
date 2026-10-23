@@ -1,0 +1,11 @@
+add_task(recursion_count 01_count_to_n.cpp)
+add_task(recursion_range 02_from_a_to_b.cpp)
+add_task(recursion_digit_sum 03_digit_sum.cpp)
+add_task(recursion_prime_factors 04_prime_factors.cpp)
+
+add_io_test(recursion_count recursion_count "5" "1 2 3 4 5")
+add_io_test(recursion_range_up recursion_range "2|6" "2 3 4 5 6")
+add_io_test(recursion_range_down recursion_range "5|1" "5 4 3 2 1")
+add_io_test(recursion_digit_sum recursion_digit_sum "12345" "Сумма цифр: 15")
+add_io_test(recursion_prime_factors recursion_prime_factors "360" "2 2 2 3 3 5")
+add_io_test(recursion_prime_big recursion_prime_factors "1000000007" "1000000007")
